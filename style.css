@@ -234,7 +234,7 @@ h3 {
   padding: 64px;
 }
 
-@media screen and (max-width:840px) {
+@media screen and (max-width:600px) {
 .Menu {
   height: 72px;
 }
@@ -317,6 +317,43 @@ h3 {
   margin-top:0;
 
 }
+.half-a {
+  grid-area: half-a;
+  text-align: center;
+}
+.half-a a {
+  color: #7ec0ee;
+}
+.text-a {
+  padding-top: 36px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.image-a {
+  height: 220px;
+  margin-top: 24px;
+}
+.half-b {
+  grid-area: half-b;
+  text-align: center;
+}
+.image-b {
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/apple-giveback_large_2x.jpg);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 64px;
+  height: 256px;
+}
+.text-b {
+  padding-top: 36px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.half-b a {
+  color: #7ec0ee;
+}
+
 .market-container {
   display: grid;
   grid-template-columns: 1fr;
