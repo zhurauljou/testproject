@@ -4,6 +4,7 @@ html {
 
 body {
   margin:0;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -35,6 +36,7 @@ h3 {
   font-size: 24px;
   margin-bottom: 0;
 }
+
 .Menu {
   width: 100%;
   position: fixed;
@@ -178,6 +180,7 @@ h3 {
   color: #7ec0ee;
 }
 .grid-container {
+  max-width: 1200px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'wide wide'
@@ -185,6 +188,10 @@ h3 {
   display: grid;
   grid-gap: 36px;
   margin: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 36px;
+  padding-right: 36px;
 }
 
 .grid-container div {
@@ -192,11 +199,12 @@ h3 {
 }
 
 .market-container {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 36px;
-  margin-left: 36px;
-  margin-right: 36px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 36px;
   text-align: center;
 }
@@ -224,4 +232,123 @@ h3 {
 }
 .b {
   padding: 64px;
+}
+
+@media screen and (max-width:840px) {
+.Menu {
+  height: 72px;
+}
+.menupanel a {
+  display: none;
+}
+
+  h1 {
+    font-size: 32px;
+  }
+  h3 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+.hero {
+    height: 600px;
+    text-align: center;
+    background-color: black;
+    padding-left: 36px;
+    padding-right:36px;
+  }
+.hero h1 {
+  font-size: 32px;
+}
+
+.iphoneImage {
+    width: 320px;
+    height: 600px;
+    background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/hero-iphone-xs_small_2x.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+    bottom:0;
+}
+.grid-container {
+  max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'wide'
+      'half-a'
+      'half-b';
+    display: grid;
+    grid-gap: 18px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+.wide {
+  grid-area: wide;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'top-txt'
+    'bottom-img';
+  display: grid;
+
+}
+.left-image {
+  grid-area: bottom-img;
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/compare_large_2x.jpg);
+  background-position: bottom;
+  background-size: contain;
+  height: 300px;
+  background-repeat: no-repeat;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.right-text {
+  grid-area: top-txt;
+  text-align: center;
+  padding: 36px;
+  margin-top:0;
+
+}
+.market-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 36px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  text-align: center;
+}
+.market-container a {
+  color: #7ec0ee;
+}
+.img-a {
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/icon-delivery_large_2x.png);
+  background-size: 40px 44px;
+  width: 40px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-b {
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/icon-personal-setup_large_2x.png);
+  background-size: 44px 44px;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.a {
+  padding: 32px;
+}
+.b {
+  padding: 32px;
 }
