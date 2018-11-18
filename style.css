@@ -1,57 +1,227 @@
 html {
-  background-image: linear-gradient(-180deg, #3F12A6 0%, #4064DF 100%);
-  background-size: cover;
-  height: 100%;
-
-}
-body{
-  margin: 0px;
+  background-color: #F2F2F2;
 }
 
-.cloud{
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 150px;
-  position: relative;
-  width: 300px;
-  height: 100px;
-  border-radius: 50px;
-  background: #fff;
-  animation: move 8s linear infinite;
+body {
+  margin:0;
 }
 
-.cloud::before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  left: 45px;
-  background: #fff;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-.cloud:after {
-  content: '';
-  position: absolute;
-  top: -80px;
-  left: 80px;
-  background: #fff;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-
+p {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  line-height: 1.5em;
 }
 
-.grass {
-  background-image: url(https://mbtskoudsalg.com/images/easter-basket-grass-png-5.png);
-  background-repeat: repeat-x;
-  background-size: contain;
-  position: fixed;
-  bottom: 0px;
+h1 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 44px;
+}
+h3 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.Menu {
   width: 100%;
-  height: 80px;
+  position: fixed;
+  background-color: black;
+  -webkit-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
+}
+.logo_apple {
+  width: 24px;
+  height: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-image: url(https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg);
+  background-position: center;
+  background-size: 24px;
+  margin-left: 44px;
+  position: absolute;
+}
+.menupanel {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+}
 
+.menupanel a {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.menupanel a:hover {
+  background-color: #fb5858;
+  transition: 0.15s;
+  transition-timing-function: ease-out;
+}
 
+.hero {
+  height: 720px;
+  text-align: center;
+  background-color: black;
+}
+.iPhoneXs {
+  background-image: url(https://www.iqjersey.com/wp-content/uploads/2018/09/Apple_Logo_iPhone_XS_blk_061318-Gold.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  width: 180px;
+  padding-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.iphoneImage {
+  width: 960px;
+  height: 256px;
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/hero-iphone-xs_medium_2x.jpg);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+}
+.hero h1 {
+  font-size: 56px;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0;
+}
+.hero a {
+  color: #7ec0ee;
+  margin-right: 24px;
+}
+.wide {
+  grid-area: wide;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left-image {
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/compare_large_2x.jpg);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 36px;
+  height: 480px;
+  margin-left: 36px;
+  display: inline-grid;
+}
+.right-text {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-grid;
+  padding: 64px;
+}
+
+.wide a {
+  color: #7ec0ee;
+}
+
+.half-a {
+  grid-area: half-a;
+  text-align: center;
+}
+.half-a a {
+  color: #7ec0ee;
+}
+.text-a {
+  padding-top: 36px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.image-a {
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/iphone-upgrade_large_2x.jpg);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 64px;
+  height: 256px;
+  margin-bottom: 0;
+}
+.half-b {
+  grid-area: half-b;
+  text-align: center;
+}
+.image-b {
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/apple-giveback_large_2x.jpg);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 64px;
+  height: 256px;
+}
+.text-b {
+  padding-top: 36px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.half-b a {
+  color: #7ec0ee;
+}
+.grid-container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'wide wide'
+    'half-a half-b';
+  display: grid;
+  grid-gap: 36px;
+  margin: 36px;
+}
+
+.grid-container div {
+  background-color: white;
+}
+
+.market-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 36px;
+  margin-left: 36px;
+  margin-right: 36px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.market-container a {
+  color: #7ec0ee;
+}
+.img-a {
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/icon-delivery_large_2x.png);
+  background-size: 40px 44px;
+  width: 40px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-b {
+  background-image: url(https://www.apple.com/v/iphone/home/y/images/overview/icon-personal-setup_large_2x.png);
+  background-size: 44px 44px;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.a {
+  padding: 64px;
+}
+.b {
+  padding: 64px;
 }
